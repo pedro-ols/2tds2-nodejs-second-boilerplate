@@ -16,6 +16,11 @@ class UsersRepository {
 
         return newUser;
     }
+
+    getElementById(id) {
+        const u = this.users.find(u => u.id == id);
+        return u;
+    }
 }
 
 export default UsersRepository;
